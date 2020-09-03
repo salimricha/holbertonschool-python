@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-def add(a, b):
-    a = 1
-    b = 2
-    return print('{} + {} = {}'.format(a, b, a+b))
+from add_0 import add
+
+
+def add_import(a, b):
+    print('{} + {} = {}'.format(a, b, add(a, b)))
+    if _name_ == '_main_':
+        a = 1
+        b = 2
+add_import(a, b)
